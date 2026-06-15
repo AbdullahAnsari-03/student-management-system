@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/students";
+const API_URL = "https://sms-backend-6rub.onrender.com/students";
 
 export const getStudents = async (page = 1, limit = 5) => {
   const response = await axios.get(
@@ -35,7 +35,7 @@ export const uploadPhoto = async (file) => {
   formData.append("photo", file);
 
   const response = await axios.post(
-    "http://localhost:5000/students/upload",
+    "https://sms-backend-6rub.onrender.com/students/upload",
     formData,
     {
       headers: {
@@ -49,7 +49,7 @@ export const uploadPhoto = async (file) => {
 
 export const getActivityLogs = async () => {
   const response = await axios.get(
-    "http://localhost:5000/students/logs"
+    "https://sms-backend-6rub.onrender.com/students/logs"
   );
 
   return response.data;
