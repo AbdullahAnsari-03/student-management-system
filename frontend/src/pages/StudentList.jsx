@@ -145,7 +145,7 @@ function StudentList({ setSelectedStudent, setRefreshTrigger, refreshTrigger }) 
                         <div className="h-11 w-11 shrink-0">
                           {student.photo_url ? (
                             <img
-                              src={`http://localhost:5000${student.photo_url}`}
+                              src={`https://sms-backend-6rub.onrender.com${student.photo_url}`}
                               alt={student.name}
                               className="h-11 w-11 rounded-full object-cover border border-slate-100 shadow-xs"
                             />
@@ -401,4 +401,4 @@ function StudentList({ setSelectedStudent, setRefreshTrigger, refreshTrigger }) 
   );
 }
 
-export default StudentList;
+export default StudentList;

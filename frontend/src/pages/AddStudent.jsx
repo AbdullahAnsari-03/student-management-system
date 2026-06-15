@@ -47,7 +47,7 @@ function AddStudent({ selectedStudent, setSelectedStudent, setRefreshTrigger, on
 
       setEditingId(selectedStudent.id);
       if (selectedStudent.photo_url) {
-        setPhotoPreview(`http://localhost:5000${selectedStudent.photo_url}`);
+        setPhotoPreview(`https://sms-backend-6rub.onrender.com${selectedStudent.photo_url}`);
       } else {
         setPhotoPreview(null);
       }
@@ -396,4 +396,4 @@ function AddStudent({ selectedStudent, setSelectedStudent, setRefreshTrigger, on
   );
 }
 
-export default AddStudent;
+export default AddStudent;
